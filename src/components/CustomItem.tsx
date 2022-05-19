@@ -17,7 +17,6 @@ const CustomItem = ({item, editMode, updateItem, removeItem}: ItemProps) => {
 
 
     const updateType = (type: String) => {
-        console.log("type", type)
         item.type = type as Item["type"]
         updateStateItem()
     }
@@ -55,7 +54,7 @@ const CustomItem = ({item, editMode, updateItem, removeItem}: ItemProps) => {
                 
             </fieldset>
             {(removeItem && !editMode) && 
-                <button type="button" onClick={() => {removeItem(item.id)}}><MdDelete size={30}></MdDelete></button>            
+                <button type="button" onClick={() => {removeItem(item.id)}} title="remove"><MdDelete size={30}></MdDelete></button>            
                 
             }
         </div>

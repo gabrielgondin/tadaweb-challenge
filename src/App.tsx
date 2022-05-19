@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
 import CustomApp from './components/CustomApp';
-// import CustomForm from './components/CustomForm';
+import './App.css';
 
 const App: React.FC = () => {
 
   return (
-    <div className="App">
+    <div id="app" className="App">
       <CustomApp></CustomApp>
     </div>
   );

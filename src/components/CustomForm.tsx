@@ -11,7 +11,6 @@ const CustomForm = () => {
     const itensCounter = useRef(itens[itens.length-1]?.id || 0)
 
     const updateItem = (itemUpdated: Item) => {
-        console.log("updateItem", itemUpdated)
         setItem(itemUpdated)
     }
 
