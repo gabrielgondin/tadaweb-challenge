@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -13,26 +17,23 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+}
+.form {
+  @apply grid lg:max-w-3xl 2xl:max-w-4xl px-7 bg-white border rounded-md shadow-lg;
+}
+.form__fieldset {
+  @apply px-4 py-2 my-2 justify-between shadow-md shadow-slate-200 rounded-lg w-full;
 }
 
-.App-link {
-  color: #61dafb;
+.form__input {
+  @apply text-left border rounded-md text-base items-start w-full h-8 bg-slate-50 px-1 focus-visible:border-0 focus:border-0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__label {
+  @apply mb-1 block text-left font-bold text-xl text-cyan-900;
+}
+
+.form__button {
+  @apply text-center mx-auto my-4 w-fit px-4 py-1.5 block font-semibold rounded-md border text-white;
 }
